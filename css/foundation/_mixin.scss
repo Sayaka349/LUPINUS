@@ -1,0 +1,18 @@
+$breakpoints: (                          //スマホ:595px以下
+	tb: "screen and (min-width: 560px)", //タブレット:560~959px
+	pc: "screen and (max-width: 960px)", //PC:960px以上
+) ;
+
+@mixin tb($breakpoint: md) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+	  @content;
+	}
+}
+
+// 指定したKey($breakpoint)の値($breakpoint: tb)つまり
+// @media sreen and (min-width: 560px) を取得している
+
+// 使う時は
+// @include tb() {}
+
+// ()内、初期値tbなので、必要に応じてpcを入力
