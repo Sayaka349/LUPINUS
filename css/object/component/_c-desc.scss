@@ -1,0 +1,14 @@
+.c-desc {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: $font-wight-el;
+    letter-spacing: 1.5px;
+    @include mq(pc) {
+        font-size: 1.4rem;
+    }
+    &_small {
+        @extend .c-desc;
+        font-size: 1rem;
+    }
+}
+

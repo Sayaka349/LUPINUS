@@ -1,0 +1,10 @@
+.l-footer {
+    padding: 50px 0 70px 0;
+    background-color: $color-gray;
+    text-align: center;
+    z-index: -100;
+    &_logo {
+        width: 209px;
+        margin: 0 auto 50px auto;
+    }
+}

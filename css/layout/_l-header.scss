@@ -1,30 +1,30 @@
 .l-header {
     position: relative;
-    padding: 10px 13px;
+    z-index: 100;
     @include mq(pc) {
         display: flex;
         justify-content: space-between;
     }
     &_logo {
         width: 103px;
-        margin-top: 7px;
-        margin-bottom: 3px;
+        margin: 17px 0px 13px 15px;
         @include mq() {
             width: 150px;
         }
         @include mq(pc) {
             width: 208px;
-            margin-left: 25px;
         }
     }
     &_btn {
         position: absolute;
-        top: 10px;
+        top: -3px;
         right: 15px;
+        @include mq() {
+            top: 0;
+        }
     }
     &_right {
         position: relative;
-        margin: 30px 40px;
         @include mq(pc) {
             display: inline-block;
             margin: 0;

@@ -1,0 +1,26 @@
+.l-main {
+    margin-bottom: 70px;
+    &_container {
+        padding: 0 36px;
+        @include mq(pc) {
+            padding: 0 86px;
+        }
+        &-intro {
+            @include mq() {
+                padding: 0 36px;
+            }
+            @include mq(pc) {
+                padding: 0 72px;
+            }
+        }
+        &-service {
+            text-align: center;
+            @include mq() {
+                padding: 0 36px;
+            }
+            @include mq(pc) {
+                padding: 0 72px;
+            }
+        }
+    }
+}

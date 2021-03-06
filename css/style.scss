@@ -8,8 +8,19 @@
 
 // layout
 @import "./layout/l-header";
+@import "./layout/l-main";
+@import "./layout/l-footer";
+
 // component
+@import "./object/component/c-subtitle";
+@import "./object/component/c-desc";
+@import "./object/component/c-gridcard";
+@import "./object/component/c-btn";
 
 // project
-@import "./object/project/p-gnav"
+@import "./object/project/p-gnav";
+@import "./object/project/p-mainvisual";
+@import "./object/project/p-section";
+@import "./object/project/p-grid";
+
 // utility

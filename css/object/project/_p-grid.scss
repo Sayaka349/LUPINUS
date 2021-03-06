@@ -1,0 +1,34 @@
+.p-grid {
+    margin: 15px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq() {
+        flex-direction: row;
+    }
+    &_card100 {
+        margin: 5px 0;
+        flex: 2;
+        flex-basis: 100%;
+        @include mq() {
+            margin: 5px;
+            flex: 1;
+        }
+        @include mq(pc) {
+            margin: 10px;
+            flex: 1;
+        }
+    }
+    &_card50 {
+        margin: 1px;
+        flex-basis: 48%;
+        @include mq() {
+            margin: 5px;
+            flex: 1;
+        }
+        @include mq(pc) {
+            margin: 10px;
+            flex: 1;
+        }
+    }
+}

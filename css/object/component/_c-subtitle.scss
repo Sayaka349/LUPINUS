@@ -1,0 +1,43 @@
+.c-subtitle {
+    position: relative;
+    display: inline-block;
+    width: 302px;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: $font-weight-l;
+    letter-spacing: 1.5px;
+    @include mq(pc) {
+        width: 450px;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $color-purple;
+        width: 234px;
+        height: 27px;
+        z-index: -1;
+        @include mq(pc) {
+            width: 350px;
+            height: 40px;
+        }
+    }
+    &.ft {
+        color: $color-gray;
+        z-index: 100;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            width: 234px;
+            height: 27px;
+            z-index: -1;
+        }    
+    }
+
+}

@@ -52,8 +52,11 @@
         }    
     }
     &_menu>ul{
+        padding: 0 13px 70px 13px;
+        background-color: #fff;
             @include mq(pc) {
                 display: flex;
+                padding: 0;
             }
             &>li {
                 padding: 13px 0;
@@ -64,8 +67,9 @@
                     border: none;
                 }
             &>a {
-                font-size: 14px;
-                color: $color-gray;
+                font-size: 1.4rem;
+                font-weight: $font-weight-l;
+                color: black;
             }
         }
     }
