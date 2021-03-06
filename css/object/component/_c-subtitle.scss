@@ -37,6 +37,10 @@
             width: 234px;
             height: 27px;
             z-index: -1;
+            @include mq(pc) {
+                width: 350px;
+                height: 40px;
+            }    
         }    
     }
 
