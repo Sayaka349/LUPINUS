@@ -1,9 +1,13 @@
 .l-header {
-    position: relative;
-    z-index: 100;
-    @include mq(pc) {
-        display: flex;
-        justify-content: space-between;
+    // height: 100%;
+    // position: fixed;
+    &_container {
+        position: relative;
+        z-index: 100;
+        @include mq(pc) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &_logo {
         width: 103px;
