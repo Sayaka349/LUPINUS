@@ -567,6 +567,7 @@ img {
 }
 
 .c-btn {
+  color: #fff;
   width: 146px;
   height: 40px;
   background-color: #aaaaaa;
@@ -587,6 +588,19 @@ img {
 .c-btn.ft {
   border: 1px solid #fff;
   margin: 20px 0 70px 0;
+}
+
+#contact {
+  color: #fff;
+  width: 146px;
+  height: 40px;
+  background-color: #aaaaaa;
+}
+
+#contact > a {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
 }
 
 .c-copyright {
