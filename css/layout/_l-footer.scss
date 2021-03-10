@@ -11,5 +11,8 @@
         font-size: 1.1rem;
         font-weight: $font-wight-el;
         color: #fff;
+        @include mq(pc) {
+            font-size: 1.4rem;
+        }
     }
 }

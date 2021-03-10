@@ -1,5 +1,13 @@
 .l-main {
+    padding-top: 70px;
     margin-bottom: 70px;
+    z-index: -100;
+    @include mq(){
+        padding-top: 83px;
+    }
+    @include mq(pc){
+        padding-top: 100px;
+    }
     &_container {
         padding: 0 36px;
         @include mq(pc) {
