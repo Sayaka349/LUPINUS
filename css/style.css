@@ -484,20 +484,23 @@ img {
 }
 
 .l-footer {
-  padding: 50px 36px 0 36px;
   background-color: #aaaaaa;
   text-align: center;
   z-index: -100;
 }
 
+.l-footer_container {
+  padding: 50px 36px 0 36px;
+}
+
 @media screen and (min-width: 560px) {
-  .l-footer {
+  .l-footer_container {
     padding: 50px 72px 0 72px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .l-footer {
+  .l-footer_container {
     padding: 50px 158px 0 158px;
   }
 }

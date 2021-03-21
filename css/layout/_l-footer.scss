@@ -1,13 +1,15 @@
 .l-footer {
-    padding: 50px 36px 0 36px;
     background-color: $color-gray;
     text-align: center;
     z-index: -100;
-    @include mq() {
-        padding: 50px 72px 0 72px;
-    }
-    @include mq(pc) {
-        padding: 50px 158px 0 158px;
+    &_container {
+        padding: 50px 36px 0 36px;
+        @include mq() {
+            padding: 50px 72px 0 72px;
+        }
+        @include mq(pc) {
+            padding: 50px 158px 0 158px;
+        }    
     }
     &_logo {
         width: 209px;
