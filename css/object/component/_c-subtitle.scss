@@ -3,21 +3,21 @@
     display: inline-block;
     width: 302px;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: $font-weight-l;
     letter-spacing: 1.5px;
     @include mq(pc) {
         width: 450px;
-        font-size: 1.8rem;
+        font-size: 2rem;
         letter-spacing: 2px;
     }
     &::after {
         content: "";
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: -25px;
         background-color: $color-purple;
-        width: 234px;
+        width: 260px;
         height: 27px;
         z-index: -1;
         @include mq(pc) {
@@ -32,9 +32,9 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: -25px;
             background-color: #fff;
-            width: 234px;
+            width: 260px;
             height: 27px;
             z-index: -1;
             @include mq(pc) {
