@@ -9,9 +9,6 @@
     }
     &_container {
         padding: 0 36px 70px 36px;
-        @include mq(pc) {
-            padding: 0 86px;
-        }
         &-intro {
             @include mq() {
                 padding: 0 36px;
@@ -32,5 +29,8 @@
     }
     &_bg {
         background-color: $color-pink;
+        &.about {
+            background-color: $color-purple;
+        }
     }
 }

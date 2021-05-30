@@ -448,12 +448,6 @@ img {
   padding: 0 36px 70px 36px;
 }
 
-@media screen and (min-width: 960px) {
-  .l-main_container {
-    padding: 0 86px;
-  }
-}
-
 @media screen and (min-width: 560px) {
   .l-main_container-intro {
     padding: 0 36px;
@@ -484,6 +478,10 @@ img {
 
 .l-main_bg {
   background-color: #f0d8e0;
+}
+
+.l-main_bg.about {
+  background-color: #decde2;
 }
 
 .l-footer {
@@ -627,6 +625,35 @@ img {
 @media screen and (min-width: 960px) {
   .c-gridcard_img {
     height: 280px;
+  }
+}
+
+.c-gridcard_img.big {
+  height: 280px;
+}
+
+@media screen and (min-width: 560px) {
+  .c-gridcard_img.big {
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .c-gridcard_img.big {
+    height: 280px;
+  }
+}
+
+.c-gridcard_name {
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+  .c-gridcard_name {
+    font-size: 1.6rem;
   }
 }
 
@@ -896,6 +923,16 @@ img {
   text-decoration: underline;
 }
 
+.p-section_txt-contain {
+  padding: 0 36px;
+}
+
+@media screen and (min-width: 960px) {
+  .p-section_txt-contain {
+    padding: 0 72px;
+  }
+}
+
 .p-grid {
   padding: 30px 0;
   margin-top: 15px;
@@ -923,7 +960,7 @@ img {
 }
 
 .p-grid_card100 {
-  margin: 5px 0;
+  margin: 10px 0;
   -webkit-box-flex: 2;
   -webkit-flex: 2;
       -ms-flex: 2;
@@ -940,6 +977,14 @@ img {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .p-grid_card100.sub {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
   }
 }
 
@@ -980,6 +1025,14 @@ img {
   }
 }
 
+@media screen and (min-width: 560px) {
+  .p-grid_card50.sub {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+  }
+}
+
 .p-sns {
   margin: 20px 0;
   font-size: 2.5rem;
@@ -1009,15 +1062,19 @@ img {
      object-position: 0% 80%;
 }
 
+.p-sidemenu {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 560px) {
   .p-sidemenu {
-    margin: 0 16%;
+    margin: 30px 16%;
   }
 }
 
 @media screen and (min-width: 960px) {
   .p-sidemenu {
-    margin: 0 20%;
+    margin: 30px 20%;
   }
 }
 

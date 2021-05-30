@@ -8,13 +8,20 @@
         flex-direction: row;
     }
     &_card100 {
-        margin: 5px 0;
+        margin: 10px 0;
         flex: 2;
         flex-basis: 100%;
         @include mq() {
             margin: 5px;
             flex: 1;
         }
+
+        &.sub {
+            @include mq() {
+                flex-basis: 25%;
+            }
+        }
+    
         @include mq(pc) {
             margin: 10px;
             flex: 1;
@@ -31,5 +38,12 @@
             margin: 10px;
             flex: 1;
         }
+
+        &.sub {
+            @include mq() {
+                flex-basis: 25%;
+            }
+        }
+
     }
 }
