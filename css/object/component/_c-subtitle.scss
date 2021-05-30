@@ -43,5 +43,25 @@
             }    
         }    
     }
+    &.sub {
+        margin: 70px 0 0 0;
+        color: #000;
+        z-index: 100;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -25px;
+            background-color: #fff;
+            width: 260px;
+            height: 27px;
+            z-index: -1;
+            @include mq(pc) {
+                width: 350px;
+                height: 40px;
+            }    
+        }    
+    }
+
 
 }

@@ -429,7 +429,6 @@ img {
 
 .l-main {
   padding-top: 70px;
-  margin-bottom: 70px;
   z-index: -100;
 }
 
@@ -446,7 +445,7 @@ img {
 }
 
 .l-main_container {
-  padding: 0 36px;
+  padding: 0 36px 70px 36px;
 }
 
 @media screen and (min-width: 960px) {
@@ -481,6 +480,10 @@ img {
   .l-main_container-service {
     padding: 0 72px;
   }
+}
+
+.l-main_bg {
+  background-color: #f0d8e0;
 }
 
 .l-footer {
@@ -564,6 +567,30 @@ img {
 
 @media screen and (min-width: 960px) {
   .c-subtitle.ft::after {
+    width: 350px;
+    height: 40px;
+  }
+}
+
+.c-subtitle.sub {
+  margin: 70px 0 0 0;
+  color: #000;
+  z-index: 100;
+}
+
+.c-subtitle.sub::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  background-color: #fff;
+  width: 260px;
+  height: 27px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 960px) {
+  .c-subtitle.sub::after {
     width: 350px;
     height: 40px;
   }
@@ -807,7 +834,7 @@ img {
 .p-mainvisual_logo {
   width: 15%;
   position: absolute;
-  top: 3%;
+  top: 1%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -870,7 +897,8 @@ img {
 }
 
 .p-grid {
-  margin: 15px 0 30px 0;
+  padding: 30px 0;
+  margin-top: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -960,5 +988,62 @@ img {
 .p-sns_icon {
   margin: 0 10px;
   color: #fff;
+}
+
+.p-topvisual {
+  height: 140px;
+}
+
+@media screen and (min-width: 960px) {
+  .p-topvisual {
+    height: 250px;
+  }
+}
+
+.p-topvisual_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: 0% 80%;
+     object-position: 0% 80%;
+}
+
+@media screen and (min-width: 560px) {
+  .p-sidemenu {
+    margin: 0 16%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .p-sidemenu {
+    margin: 0 20%;
+  }
+}
+
+.p-sidemenu_btn {
+  margin: 7px 4px;
+  background-color: #f0d8e0;
+}
+
+.p-sidemenu_btn:hover {
+  background-color: #fff;
+  border: 2px solid #f0d8e0;
+}
+
+.p-sidemenu_btn > a {
+  color: #000;
+}
+
+@media screen and (min-width: 560px) {
+  .p-sidemenu_btn {
+    margin: 9px 6px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .p-sidemenu_btn {
+    margin: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
