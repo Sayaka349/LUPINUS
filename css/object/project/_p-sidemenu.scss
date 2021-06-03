@@ -1,11 +1,10 @@
 .p-sidemenu {
-    margin-top: 30px;
+    margin-top: 50px;
     @include mq() {
-        margin: 30px 16%;
+        margin: 50px 16% 0 16%;
     }
-
     @include mq(pc) {
-        margin: 30px 20%;
+        margin: 100px 20% 0 20%;
     }
     &_btn {
         margin: 7px 4px;

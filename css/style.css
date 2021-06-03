@@ -477,7 +477,7 @@ img {
 }
 
 .l-main_bg {
-  background-color: #f0d8e0;
+  background-color: #f1e9eb;
 }
 
 .l-main_bg.about {
@@ -653,6 +653,29 @@ img {
 
 @media screen and (min-width: 960px) {
   .c-gridcard_name {
+    font-size: 1.6rem;
+  }
+}
+
+.c-gridcard_name-side {
+  padding-top: 16px;
+  border-bottom: #f0d8e0 solid 2px;
+  border-right: #f0d8e0 solid 2px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+@media screen and (min-width: 560px) {
+  .c-gridcard_name-side {
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .c-gridcard_name-side {
+    padding-bottom: 16px;
     font-size: 1.6rem;
   }
 }
@@ -1063,18 +1086,18 @@ img {
 }
 
 .p-sidemenu {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 560px) {
   .p-sidemenu {
-    margin: 30px 16%;
+    margin: 50px 16% 0 16%;
   }
 }
 
 @media screen and (min-width: 960px) {
   .p-sidemenu {
-    margin: 30px 20%;
+    margin: 100px 20% 0 20%;
   }
 }
 

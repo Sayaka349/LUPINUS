@@ -24,5 +24,21 @@
         @include mq(pc) {
             font-size: 1.6rem;
         }
+        &-side {
+            padding-top: 16px;
+            border-bottom: $color-pink solid 2px;
+            border-right: $color-pink solid 2px;
+            font-size: 1.4rem;
+            font-weight: $font-wight-el;
+            letter-spacing: 1.5px;
+            color: #000;
+            @include mq() {
+                padding-left: 32px;
+            }
+            @include mq(pc) {
+                padding-bottom: 16px;
+                font-size: 1.6rem;
+            }    
+        }
     }
 }
